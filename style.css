@@ -1,0 +1,185 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-image: url("../Marvel\ snap/image/default.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    overflow: hidden;
+
+}
+
+main {
+
+    margin-top: 1%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 1%;
+    height: 880px;
+    width: 890px;
+
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 2%;
+    background-color: rgba(0, 0, 0, 0.38);
+
+}
+
+.question {
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+
+}
+
+.barSansNom {
+    position: absolute;
+
+    margin-top: 15vw;
+    left: 2vw;
+    width: 12vw;
+}
+
+.theHood {
+    position: absolute;
+    margin: 1vw;
+    margin-top: 17vw;
+    left: 2vw;
+    width: 12vw;
+    transition: transform 2s;
+    z-index: -1;
+}
+
+.barSansNom:hover+.theHood {
+
+    transform: translateY(-130px);
+
+}
+
+
+.carte1,
+.carte2,
+.carte3 {
+    left: 35vw;
+    position: absolute;
+    top: 17vw;
+    ;
+    width: 20px;
+    height: 20px;
+
+    border-left: 50px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 55px solid rgb(247, 81, 175);
+    rotate: -35deg;
+    visibility: hidden;
+    transform: translateY(0);
+}
+
+.carte2 {
+    left: 39vw;
+    top: 11vw;
+    ;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 50px solid rgb(247, 81, 175);
+    rotate: -63deg;
+
+}
+
+.carte3 {
+    left: 41vw;
+    top: 5vw;
+    ;
+    width: 30px;
+    border-right: 35px solid transparent;
+    border-left: 1px solid transparent;
+    border-bottom: 50px solid rgb(247, 81, 175);
+    rotate: -90deg;
+
+}
+
+.gambit {
+    top: 1vw;
+    left: 31vw;
+    position: relative;
+    width: 15vw;
+
+}
+
+#gambit:active~.carte1,
+#gambit:active~.carte2,
+#gambit:active~.carte3 {
+    visibility: visible;
+    transform: translateY(2000px);
+    transition: visibility 2s, transform 1s;
+
+}
+
+.gambit:active {
+    width: 20vw;
+    left: 32vw;
+
+}
+
+.infinaut {
+    position: absolute;
+    width: 15.9vw;
+    right: 10%;
+    bottom: 0px;
+    transition: width 15s;
+}
+
+.infinaut:hover {
+    width: 35vw;
+    z-index: 1;
+}
+
+.aero {
+    position: absolute;
+    width: 17vw;
+    bottom: 0px;
+    left: 10%;
+
+    transition: transform 2s;
+}
+
+.aero:hover {
+
+
+    transform: translateY(-400px);
+}
+
+.recap {
+    position: absolute;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.645);
+    width: 150px;
+    right: 1%;
+    padding: 50px;
+    margin-right: 5px;
+}
+
+@media screen and (max-width:1338px) {
+    .recap {
+        visibility: hidden;
+    }
+}
+
+#coffre {
+
+    color: rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+select {
+
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    border-radius: 115px;
+    background-color: blueviolet;
+
+}
