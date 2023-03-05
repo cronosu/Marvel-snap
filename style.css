@@ -2,7 +2,7 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
-    background-image: url("../Marvel\ snap/image/default.png");
+    background-image: url("image/default.png");
     background-repeat: no-repeat;
     background-position: top;
     overflow: hidden;
