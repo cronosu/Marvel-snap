@@ -5,8 +5,10 @@ body {
     background-image: url("image/default.png");
     background-repeat: no-repeat;
     background-position: top;
+    background-size: cover;
     overflow: hidden;
     user-select: none;
+    height: 100vh;
 }
 
 main {
